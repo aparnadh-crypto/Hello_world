@@ -1,4 +1,4 @@
-name: Run Hello World Python
+name: Run Python programs
 
 on:
   push:
@@ -13,4 +13,4 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - run: python Hello.py
+      - run: python add_num.py
