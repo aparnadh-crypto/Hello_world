@@ -15,3 +15,12 @@ jobs:
         with:
           python-version: '3.x'
       - run: python add_num.py
+
+      - name: Show output
+        run: cat output.txt
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+         name: output-file
+         path: output.txt
